@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #26221f;
+    background-color: #faf7f2;
+  }
+
+  h1, h2, h3, .font-recipe-title {
+    font-family: 'Lora', Georgia, serif;
+  }
+}
+
+/* Custom Print Styles for clean recipe printing */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+  }
+
+  /* Hide navigation, footers, ad banners, and interactive buttons */
+  header, footer, .no-print, .ad-slot, .social-bar, .comment-form, .floating-timer, .cookie-banner {
+    display: none !important;
+  }
+
+  /* Expand print recipe area */
+  .printable-recipe-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+}
+
+/* Clean scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6ccbe;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8aba0;
+}

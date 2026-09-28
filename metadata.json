@@ -1,0 +1,6 @@
+{
+  "name": "Sweet Pea's Kitchen - Homestyle Recipes & Comfort Food",
+  "description": "Comforting, family-tested homestyle recipes from Sweet Pea's Kitchen. Explore dinner ideas, decadent desserts, slow cooker favorites, and easy weeknight meals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
